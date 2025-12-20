@@ -193,6 +193,14 @@
             header { flex-direction: column; text-align: center; }
             .contact-info { text-align: center; margin-top: 20px; width: 100%; }
             h1 { font-size: 2rem; }
+
+            /* ONLY ADDED TABLE FIX FOR MOBILE */
+            table {
+                display: block;
+                overflow-x: auto; /* Allows swiping left/right on phone */
+                white-space: nowrap; /* Prevents text from wrapping inside cells */
+            }
+            .container { padding: 20px; } /* Adjust padding for phone view */
         }
     </style>
 </head>
